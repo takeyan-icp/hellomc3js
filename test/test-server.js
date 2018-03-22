@@ -25,7 +25,7 @@ describe('Testing Server', function() {
       });
 
       response.on('end', function () {
-        expect(responseString).to.include('Hello world! This is a StarterKit!');
+        expect(responseString).to.include('Hello world! This is a StarterKit! (from test-server.js)');
         done();
       });
     };
